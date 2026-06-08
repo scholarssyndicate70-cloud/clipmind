@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClipMind Pro — AI Gaming Clip Editor</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    /* ── Reset & base ──────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:      #0a0a0f;
+      --bg2:     #111118;
+      --bg3:     #1a1a24;
+      --bg4:     #22222f;
+      --border:  #2a2a3a;
+      --text:    #e8e8f0;
+      --muted:   #666680;
+      --red:     #e03c4a;
+      --red2:    #c0303e;
+      --green:   #22c55e;
+      --blue:    #3b82f6;
+      --yellow:  #eab308;
+      --radius:  10px;
+      --font:    'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    html, body { height: 100%; background: var(--bg); color: var(--text); font-family: var(--font); }
+    #root { min-height: 100vh; }
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap');
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel" src="src/app.jsx"></script>
+</body>
+</html>
